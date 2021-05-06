@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
 
 import Menu from './MenuComponent';
@@ -7,11 +7,18 @@ import { DISHES } from '../shared/dishes';
 
 class Main extends Component {
 
-    // Последовательность вызова
+    // Mount:
     // constructor()
     // getDerivedStateFromProps()
     // render()
     // componentDidMount()
+
+    // Update:
+    // getDerivedStateFromProps()
+    // shouldComponentUpdate()
+    // render()
+    // getSnapshotBeforeUpdate()
+    // componentDidUpdate()
 
     constructor(props) {
         super(props);
